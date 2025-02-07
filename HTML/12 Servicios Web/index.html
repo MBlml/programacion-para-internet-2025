@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Web</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+            margin-top: 50px;
+        }
+        nav {
+            background-color: #0a0048;
+            padding: 0px;
+            position: fixed;
+            width: 100%;
+            top: -25px;
+            z-index: 1000;
+            height: 80px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav ul li {
+            margin: 0;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white; 
+            font-weight: bold;
+        }
+        .nav-left {
+            margin-right: auto;
+            margin-left: 15px;
+        }
+        .nav-right {
+            display: flex;
+            gap: 15px;
+            margin-right: 15px;
+        }
+        section {
+            padding: 25px; 
+            border-bottom: solid 1px #ccc;
+        }
+        #portada {
+            margin-top: 50px;
+            text-align: center;
+        }
+        #portada, #desarrollo {
+            background-color: #f9f9f9;
+        }
+        #desarrollo img {
+            float: right;
+            margin-left: 15px;
+            max-width: 50%;
+        }
+        h2, h3 {
+            color: #0a0048;
+        }
+        footer {
+            background-color: #0a0048;
+            color: white;
+            text-align: center;
+            width: 100%;
+            height: 50px;
+        }
+        footer p {
+            padding: 15px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        #img2 {
+            max-width: 100%;
+            height: auto;
+            margin-top: -250px;;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="nav-left"><a href="#"><h1>Servicios Web</h1></a></li>
+            <div class="nav-right">
+                <li><a href="#">Portada</a></li>
+                <li><a href="#tabla-de-contenido">Tabla de Contenido</a></li>
+                <li><a href="#desarrollo">Desarrollo</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+            </div>
+        </ul>
+    </nav>
+    <section id="portada">
+        <h2>SERVICIOS WEB</h2>
+        <img src="https://www.ceupe.cl/images/easyblog_articles/384/b2ap3_thumbnail_R-12.jpg" alt="Imagen de portada">
+    </section>
+    <section id="tabla-de-contenido">
+        <h2>Tabla de Contenido</h2>
+        <ul>
+            <li><a href="#portada">Portada</a></li>
+            <li><a href="#tabla-de-contenido">Tabla de Contenido</a></li>
+            <li><a href="#desarrollo">Desarrollo</a></li>
+            <li><a href="#referencias">Referencias</a></li>
+        </ul>
+    </section>
+    <section id="desarrollo">
+        <H2>¿Qué son los Servicios Web?</H2>
+        <p>Los servicios web son aplicaciones que permiten la comunicación y el intercambio de datos entre diferentes sistemas a través de la web. Utilizan protocolos estándar como HTTP, XML, SOAP y REST para facilitar esta comunicación.</p>
+        <h3>Tipos de Servicios Web</h3>
+        <p>Existen principalmente dos tipos de servicios web:</p>
+        <ul>
+            <img src="https://i0.wp.com/lab.wallarm.com/wp-content/uploads/2024/07/128.2-1.jpg?w=770&ssl=1" alt="Imagen de portada" width="500px">
+            <li><strong>SOAP (Simple Object Access Protocol):</strong> Un protocolo basado en XML que permite la comunicación entre aplicaciones a través de la red.</li>
+            <li><strong>REST (Representational State Transfer):</strong> Un estilo de arquitectura que utiliza HTTP y URI para interactuar con recursos web.</li>
+        </ul>
+        <h3>Beneficios de los Servicios Web</h3>
+        <p>Los servicios web ofrecen varios beneficios, incluyendo:</p>
+        <ul>
+            <li>Interoperabilidad entre diferentes plataformas y lenguajes de programación.</li>
+            <li>Reutilización de componentes y servicios existentes.</li>
+            <li>Facilidad de integración con otras aplicaciones y sistemas.</li>
+        </ul>
+        <h3>Protocolos y Tecnologías Relacionadas</h3>
+        <p>Los servicios web utilizan varios protocolos y tecnologías para funcionar correctamente:</p>
+        <ul>
+            <li><strong>HTTP (Hypertext Transfer Protocol):</strong> El protocolo base para la comunicación en la web.</li>
+            <li><strong>XML (Extensible Markup Language):</strong> Un lenguaje de marcado utilizado para estructurar datos.</li>
+            <li><strong>JSON (JavaScript Object Notation):</strong> Un formato de intercambio de datos ligero y fácil de leer.</li>
+            <li><strong>WSDL (Web Services Description Language):</strong> Un lenguaje basado en XML para describir servicios web.</li>
+            <li><strong>UDDI (Universal Description, Discovery, and Integration):</strong> Un estándar para listar y descubrir servicios web.</li>
+        </ul>
+        <h3>Desafíos de los Servicios Web</h3>
+        <p>A pesar de sus beneficios, los servicios web también presentan algunos desafíos:</p>
+        <ul>
+            <li>Seguridad: Proteger los datos transmitidos a través de la web es crucial.</li>
+            <li>Rendimiento: La latencia y el tiempo de respuesta pueden ser un problema.</li>
+            <li>Compatibilidad: Asegurar que diferentes sistemas puedan comunicarse sin problemas.</li>
+            <img id="img2" src="https://www.parasoft.com/wp-content/uploads/2021/04/image-2-soap-vs-rest-table.png" alt="Imagen de portada" width="500px">
+        </ul>
+    </section>
+    <section id="referencias">
+        <h2>Referencias</h2>
+        <p>Aquí se listarán las referencias utilizadas para la elaboración de este documento.</p>
+        <ul>
+            <li>Fielding, R. T. (2000). Architectural Styles and the Design of Network-based Software Architectures (Doctoral dissertation, University of California, Irvine). Recuperado de <a href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf">https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf</a></li>
+            <li>Gudgin, M., Hadley, M., Mendelsohn, N., Moreau, J. J., Nielsen, H. F., Karmarkar, A., & Lafon, Y. (2007). SOAP Version 1.2 Part 1: Messaging Framework (Second Edition). W3C Recommendation. Recuperado de <a href="https://www.w3.org/TR/soap12-part1/">https://www.w3.org/TR/soap12-part1/</a></li>
+            <li>W3C. (2004). Web Services Architecture. Recuperado de <a href="https://www.w3.org/TR/ws-arch/">https://www.w3.org/TR/ws-arch/</a></li>
+            <li>Gómez, J. M. (2023). Introducción a los Servicios Web. Editorial Tecnológica. Recuperado de <a href="https://www.editorialtecnologica.com/servicios-web">https://www.editorialtecnologica.com/servicios-web</a></li>
+            <li>Martínez, L. (2022). Protocolos y Tecnologías de Servicios Web. Revista de Tecnología Web. Recuperado de <a href="https://www.revistatecnologiaweb.com/protocolos-servicios-web">https://www.revistatecnologiaweb.com/protocolos-servicios-web</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Servicios Web. Todos los derechos reservados. Juan Manuel Barajas Gomez.</p>
+    </footer>
+</body>
+</html>

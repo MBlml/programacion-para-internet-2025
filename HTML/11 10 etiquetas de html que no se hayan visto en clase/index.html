@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 etiquetas de html que no se hayan visto en clase</title>
+</head>
+<body>
+    <h1>10 etiquetas de html que no se hayan visto en clase - Juan Manuel Barajas Gómez</h1>
+
+    <h3>Etiqueta de Video: Inserta un video en la página web.</h3>
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta la etiqueta de video.
+    </video>
+
+    <h3>Etiqueta de Audio: Inserta un archivo de audio en la página web.</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Tu navegador no soporta la etiqueta de audio.
+    </audio>
+
+    <h3>Etiqueta de Canvas: Dibuja gráficos en la web.</h3>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid red;"></canvas>
+
+    <h3>Etiqueta de iFrame: Inserta otro documento HTML dentro de la página.</h3>
+    <iframe 
+        width="300" height="300" src="https://www.youtube.com/embed/oxgx0LvH_EA" 
+        title="Marvel Studios Intro La Version del IMAX (2016-2023)" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+
+    <h3>Etiqueta de Meter: Representa una medida escalar dentro de un rango conocido.</h3>
+    <meter value="0.6">60%</meter>
+
+    <h3>Etiqueta de Progress: Representa el progreso de una tarea en curso.</h3>
+    <progress value="70" max="100"></progress>
+
+    <h3>Etiqueta de Details: Proporciona detalles adicionales que el usuario puede ver o esconder.</h3>
+    <details>
+        <summary>Más información</summary>
+        <p>Este es un texto adicional que se muestra al hacer clic en "Más información".</p>
+    </details>
+
+    <h3>Etiqueta de Summary: Define un encabezado visible para el elemento details.</h3>
+    <details>
+        <summary>Resumen</summary>
+        <p>Este es un resumen de la información.</p>
+    </details>
+
+    <h3>Etiqueta de Mark: Resalta una parte del texto.</h3>
+    <p>Este es un texto con una <mark>marca</mark> destacada.</p>
+
+    <h3>Etiqueta de Time: Representa una fecha u hora específica.</h3>
+    <time datetime="2025-12-31">31 de diciembre de 2025</time>
+
+    <h3>Etiqueta de Output: Representa el resultado de un cálculo.</h3>
+    <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" value="50"> +
+        <input type="number" id="b" value="50">
+        <output name="result" for="a b">100</output>
+    </form>
+</body>
+</html>
