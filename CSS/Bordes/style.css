@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000d21;
+    color: white;
+}
+b {
+    color: #00316e;
+}
+.container {
+    text-align: center;
+}
+.example {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border: solid 1px black;
+    background-color: white;
+    color: #00316e;
+    border-radius: 3px;
+}
+.border-top {
+    border-top: 10px solid #6eaedb;
+}
+.border-bottom {
+    border-bottom: 10px solid #6eaedb;
+}
+.border-left {
+    border-left: 10px solid #6eaedb;
+}
+.border-right {
+    border-right: 10px solid #6eaedb;
+}
+.border-all {
+    border: 10px solid #6eaedb;
+}
+.border-dotted {
+    border: 10px dotted #6eaedb;
+}
+.border-dashed {
+    border: 10px dashed #6eaedb;
+}
+.border-double {
+    border: 10px double #6eaedb;
+}
+.border-groove {
+    border: 10px groove #6eaedb;
+}
+.border-ridge {
+    border: 10px ridge #6eaedb;
+}

@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="#">
+            <h1>CSS: FLEXBOX & GRID</h1>
+        </a>
+        <div class="nav1">
+            <a href="#">
+                <h2>Flexbox</h2>
+            </a>
+            <a href="#flexDirection">
+                <p>Direction</p>
+            </a>
+            <a href="#flexWrap">
+                <p>Wrap</p>
+            </a>
+            <a href="#alignItems">
+                <p>Align Items</p>
+            </a>
+        </div>
+        <div class="nav2">
+            <a href="#gridIntro">
+                <h2>Grid</h2>
+            </a>
+            <a href="#gridTemplate">
+                <p>Template</p>
+            </a>
+            <a href="#gridGap">
+                <p>Gap</p>
+            </a>
+            <a href="#gridAlign"> 
+                <p>Align</p>
+            </a>
+            <a href="#gridExamples">
+                <p>Examples</p>
+            </a>
+        </div>
+                
+    </nav>
+
+    
+    <section id="info">
+        <h1>Flexbox</h1>
+        <div class="titles">
+            <div class="titleLeft1">
+                <h1>¿Qué es?</h1>
+                <div class="text">
+                    <p>El Módulo de <strong>Caja Flexible</strong>, comúnmente llamado <strong>flexbox</strong>, fue diseñado como un modelo unidimensional de layout, y como un método que pueda ayudar a distribuir el espacio entre los ítems de una interfaz y mejorar las capacidades de alineación. <br><br> Esta página hace un repaso de las principales características de flexbox, las que exploraremos con mayor detalle en el resto de estas guías. <br><br>
+                    Cuando describimos a flexbox como unidimensional destacamos el hecho que flexbox maneja el layout en una sola dimensión a la vez ya sea como fila o como columna.</p>
+                </div>
+            </div>
+            <div class="titleRight1">
+                <img src="https://www.yunbitsoftware.com/blog/wp-content/uploads/2017/03/imagen-articulo-flexbox-1200x742.png" alt="img_flexbox">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="flexDirection">
+        <h1>Flex Direction</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Flex Direction: Row y Row-Reverse</h3>
+                <p>Si elegimos <strong>row</strong> o <strong>row-reverse</strong>, el eje principal correrá a lo largo de la fila según la dirección de la línea horizontal o en reversa.</p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Flex Direction: Column y Column-Reverse</h3>
+                <p>Al elegir <strong>column</strong> o <strong>column-reverse</strong> el eje principal correrá desde el borde superior de la página hasta el final según la dirección del bloque verticalmente o en reversa.</p>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <div class="example">
+                <b>1. Flex Direction: Row</b>
+                <br>
+                <div class="elements" id="elements1">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>2. Flex Direction: Row-Reverse</b>
+                <br>
+                <div class="elements" id="elements2">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>3. Flex Direction: Column</b>
+                <br>
+                <div class="elements" id="elements3">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>4. Flex Direction: Column-Reverse</b>
+                <br>
+                <div class="elements" id="elements4">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /////////////////////////////////////// -->
+
+    <section id="flexWrap">
+        <h1>Flex Wrap</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Flex Wrap: Wrap y No-Wrap</h3>
+                <p>Con <strong>wrap</strong> los elementos se envuelven en varias líneas si es necesario, y el contenedor crece en la dirección del eje transversal. <br>
+                En <strong>no-wrap</strong> los elementos se colocan en una sola línea, incluso si esto provoca que se desborden del contenedor, es el valor por defecto.            
+                </p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Flex Flow: Row Wrap</h3>
+                <p>Para <strong>flex-flow</strong>, es una propiedad abreviada que combina dos propiedades: <strong>flex-direction</strong> y <strong>flex-wrap</strong>. <br>Esto permite definir cómo se distribuyen los elementos flexibles dentro de un contenedor en una sola línea de código.</p>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <div class="example">
+                <b>5. Flex Wrap: Wrap</b>
+                <br>
+                <div class="elements" id="elements5">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+                <p>(Realiza zoom para ver la adaptación)</p>
+            </div>
+    
+            <div class="example">
+                <b>6. Flex Wrap: No-Wrap</b>
+                <br>
+                <div class="elements" id="elements6">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+                <p>(Valor por defecto, no hay cambio al hacer zoom)</p>
+            </div>
+    
+            <div class="example">
+                <b>7. Flex Flow: Row Wrap</b>
+                <br>
+                <div class="elements" id="elements7">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>8. Flex Flow: Row-Reverse Wrap</b>
+                <br>
+                <div class="elements" id="elements8">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- /////////////////////////////////////// -->
+
+    <section id="alignItems">
+        <h1>Align Items & Justify Content</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Align Items</h3>
+                <p>La propiedad <strong>align-items</strong> alineará los ítems sobre el eje cruzado.
+                <br><br>
+                <strong>stretch</strong> es el valor inicial, los ítems se ajustan por defecto a la altura del más alto.  
+                <br><strong>center</strong> para alinearlos al centro. 
+                <br><strong>flex-start</strong> para que los ítems se alineen al comienzo del contenedor flex. <br> <strong>flex-end</strong> para alinearlos al final.        
+                </p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Justify Content</h3>
+                <p>La propiedad <strong>justify-content</strong> es usada para alinear los ítems en el eje principal, cuyo <strong>flex-direction</strong> define la dirección del flujo. <br><br>
+                <strong>flex-start</strong> es el valor inicial, alineará los ítems al inicio del margen del contenedor.
+                <br><strong>center</strong> para alinearlos al centro.
+                <br><strong>space-between</strong> para tomar todo el espacio sobrante después de que los ítems hayan sido colocados
+                <br><strong>space-around</strong> para crear un espacio equitativo a la derecha e izquierda de cada ítem.
+                </p>
+            </div>
+        </div>
+    
+    
+        <div class="container">
+            <div class="example">
+                <b>9. Align Items: stretch</b>
+                <br>
+                <div class="elements1" id="elements9">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+                <br>
+                <b>10. Align Items: center</b>
+                <br>
+                <div class="elements1" id="elements10">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>11. Align Items: Flex-Start</b>
+                <br>
+                <div class="elements1" id="elements11">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+                <br>
+                <b>12. Align Items: Flex-End</b>
+                <br>
+                <div class="elements1" id="elements12">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>13. Justify Content: Flex-Start</b>
+                <br>
+                <div class="elements" id="elements13">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+                <br>
+                <b>14. Justify Content: Center</b>
+                <br>
+                <div class="elements" id="elements14">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>15. Justify Content: Space-Between</b>
+                <br>
+                <div class="elements" id="elements15">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+                <br>
+                <b>16. Justify Content: Space-Around</b>
+                <br>
+                <div class="elements" id="elements16">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ///////////////////////////////////////// -->
+    <section id="gridIntro">
+        <h1>CSS Grid</h1>
+        <div class="titles">
+            <div class="titleLeft1">
+                <h1>¿Qué es?</h1>
+                <div class="text">
+                    <p>El Módulo de <strong>CSS Grid Layout</strong>, comúnmente llamado <strong>Grid</strong>, es un sistema de diseño bidimensional que permite a los desarrolladores web crear diseños complejos y responsivos de manera sencilla. <br><br> Esta página hace un repaso de las principales características de Grid, las que exploraremos con mayor detalle en el resto de estas guías. <br><br>
+                    Grid permite trabajar con filas y columnas simultáneamente, lo que facilita la creación de diseños complejos.</p>
+                </div>
+            </div>
+            <div class="titleRight1">
+                <img src="https://scientiait.blob.core.windows.net/programandoamedianoche/wp-content/uploads/2019/03/G00.jpg" alt="img_grid">
+            </div>
+        </div>
+    </section>
+
+    <section id="gridTemplate">
+        <h1>Grid Template</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Grid Template Columns</h3>
+                <p>La propiedad <strong>grid-template-columns</strong> define las columnas de la cuadrícula. Puedes especificar el tamaño de cada columna utilizando unidades como px, %, fr, etc.</p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Grid Template Rows</h3>
+                <p>La propiedad <strong>grid-template-rows</strong> define las filas de la cuadrícula. Similar a las columnas, puedes especificar el tamaño de cada fila utilizando diferentes unidades.</p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="example">
+                <b>1. Grid Template Columns</b>
+                <br>
+                <div class="grid-container" id="grid1">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>2. Grid Template Rows</b>
+                <br>
+                <div class="grid-container" id="grid2">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gridGap">
+        <h1>Grid Gap</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Grid Column Gap</h3>
+                <p>La propiedad <strong>grid-column-gap</strong> define el espacio entre las columnas de la cuadrícula.</p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Grid Row Gap</h3>
+                <p>La propiedad <strong>grid-row-gap</strong> define el espacio entre las filas de la cuadrícula.</p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="example">
+                <b>3. Grid Column Gap</b>
+                <br>
+                <div class="grid-container" id="grid3">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>4. Grid Row Gap</b>
+                <br>
+                <div class="grid-container" id="grid4">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                    <div class="element">E4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gridAlign">
+        <h1>Align Items & Justify Content</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Align Items</h3>
+                <p>La propiedad <strong>align-items</strong> alinea los ítems sobre el eje cruzado en la cuadrícula.</p>
+            </div>
+        
+            <div class="titleRight">
+                <h3>Justify Content</h3>
+                <p>La propiedad <strong>justify-content</strong> alinea los ítems en el eje principal de la cuadrícula.</p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="example">
+                <b>5. Align Items: Center</b>
+                <br>
+                <div class="grid-container" id="grid5">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>6. Justify Content: Space-Between</b>
+                <br>
+                <div class="grid-container" id="grid6">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gridExamples">
+        <h1>Más Ejemplos de Grid</h1>
+        <div class="titles">
+            <div class="titleLeft">
+                <h3>Grid Auto Flow</h3>
+                <p>La propiedad <strong>grid-auto-flow</strong> controla cómo se colocan automáticamente los elementos en la cuadrícula. Puede ser en filas o columnas.</p>
+                <h3>Grid Area</h3>
+                <p>La propiedad <strong>grid-area</strong> permite asignar un nombre a un área específica de la cuadrícula, que luego puede ser referenciada en <strong>grid-template-areas</strong>.</p>
+            </div>
+            <div class="titleRight">
+                <h3>Grid Template Areas</h3>
+                <p>La propiedad <strong>grid-template-areas</strong> permite definir un diseño de cuadrícula utilizando nombres de áreas, lo que facilita la organización de los elementos.</p>
+                <h3>Grid Auto Columns</h3>
+                <p>La propiedad <strong>grid-auto-columns</strong> define el tamaño de las columnas generadas automáticamente en una cuadrícula.</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="example">
+                <b>7. Grid Auto Flow</b>
+                <br>
+                <div class="grid-container" id="grid7">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>8. Grid Area</b>
+                <br>
+                <div class="grid-container" id="grid8">
+                    <div class="element" style="grid-area: header;">Header</div>
+                    <div class="element" style="grid-area: main;">Main</div>
+                    <div class="element" style="grid-area: sidebar;">Sidebar</div>
+                    <div class="element" style="grid-area: footer;">Footer</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>9. Grid Template Areas</b>
+                <br>
+                <div class="grid-container" id="grid9">
+                    <div class="element" style="grid-area: header;">Header</div>
+                    <div class="element" style="grid-area: main;">Main</div>
+                    <div class="element" style="grid-area: sidebar;">Sidebar</div>
+                    <div class="element" style="grid-area: footer;">Footer</div>
+                </div>
+            </div>
+    
+            <div class="example">
+                <b>10. Grid Auto Columns</b>
+                <br>
+                <div class="grid-container" id="grid10">
+                    <div class="element">E1</div>
+                    <div class="element">E2</div>
+                    <div class="element">E3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>        
+        <p>&copy; 2025 Juan Manuel Barajas Gómez. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
